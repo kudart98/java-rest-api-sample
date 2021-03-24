@@ -1,3 +1,5 @@
+package tests;
+
 import io.restassured.response.*;
 import org.junit.jupiter.api.Test;
 
