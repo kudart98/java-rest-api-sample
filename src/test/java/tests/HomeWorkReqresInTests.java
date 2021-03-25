@@ -28,8 +28,8 @@ public class HomeWorkReqresInTests {
         .then()
                 .log().body()
                 .statusCode(200)
-                .body("support.text",
-                        is("To keep ReqRes free, contributions towards server costs are appreciated!"));
+                .body("data[0].id", is(1))
+                .body("data[1].email", is(notNullValue()));
     }
 
     @Test
